@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Banner</title>
+</head>
+<body>
+	<div class="container">
+		<div class="store">
+			<div class="store__rack rack">
+				<img src="./img/rack.svg" alt="rack" class="rack__image">
+	
+				<div class="rack__products">
+					<div class="rack__row rack__row--top">
+						<div class="rack__product rack__product--wine" draggable="true" data-type="wine">
+							<img src="./img/wine.svg" alt="wine" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--milk" draggable="true" data-type="milk">
+							<img src="./img/milk.svg" alt="milk" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--jam" draggable="true" data-type="jam">
+							<img src="./img/jam.svg" alt="jam" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--cheese" draggable="true" data-type="cheese">
+							<img src="./img/cheese.svg" alt="cheese" class="rack__product-image">
+						</div>
+					</div>
+					
+					<div class="rack__row rack__row--middle">
+						<div class="rack__product rack__product--meat" draggable="true" data-type="meat">
+							<img src="./img/meat.svg" alt="meat" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--chicken" draggable="true" data-type="chicken">
+							<img src="./img/chicken.svg" alt="chicken" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--snack" draggable="true" data-type="snack">
+							<img src="./img/snack.svg" alt="snack" class="rack__product-image">
+						</div>
+					</div>
+					
+					<div class="rack__row rack__row--bottom">
+						<div class="rack__product rack__product--pineapple" draggable="true" data-type="pineapple">
+							<img src="./img/pineapple.svg" alt="pineapple" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--banana" draggable="true" data-type="banana">
+							<img src="./img/banana.svg" alt="banana" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--apple" draggable="true" data-type="apple">
+							<img src="./img/apple.svg" alt="apple" class="rack__product-image">
+						</div>
+						<div class="rack__product rack__product--leek" draggable="true" data-type="leek">
+							<img src="./img/leek.svg" alt="leek" class="rack__product-image">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	
+			<div class="store__cart cart" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+				<img src="./img/cart.svg" alt="cart" class="cart__image" draggable="false">
+				<div class="cart__products"></div>
+			</div>
+
+			<a href="#" class="button">Оплатить корзину</a>
+
+		</div>
+	</div>
+
+	<script src="./js/script.js"></script>
+
+</body>
+</html>
